@@ -11,19 +11,14 @@ function App() {
 
   return (
     <>
-      <div>
-        <h1>ADMINISTRADOR DE CITAS</h1>
+      <h1>ADMINISTRADOR DE CITAS</h1>
+      <div class = "container">
+        <div class= "row">
+        <Formulario />
+        <ListadoCitas/>
+        </div>
       </div>
       
-      <div>
-        <Formulario />
-      </div>
-
-      <div>
-        <ListadoCitas/>
-      </div>
-        
-
     </>
   )
 }
