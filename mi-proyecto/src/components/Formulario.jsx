@@ -3,25 +3,26 @@ import './Formulario.css'
 function Formulario(){
     return(
         <>
-            <div className="containerCitas">
-                <form className="Formulario">
-                    <p>Nombre Mascota</p>
-                    <input type="text" name="nombreMascota" placeholder="Nombre Mascota"/>
+            <div className="one-half column">
+            <h2>Crear mi Cita</h2>
+                <form>
+                <label>Nombre Mascota</label>
+                <input type="text" name="mascota" class="u-full-width" placeholder="Nombre Mascota" value=""/>
 
-                    <p>Nombre Dueño</p>
-                    <input type="text" name="nombreDueño" placeholder="Nombre dueño"/>
+                <label>Nombre Dueño</label>
+                <input type="text" name="propietario" class="u-full-width" placeholder="Nombre dueño de la mascota" value=""/>
 
-                    <p>Fecha</p>
-                    <input type="date" name="fecha"/>
+                <label>Fecha</label>
+                <input type="date" name="fecha" class="u-full-width" value=""/>
 
-                    <p>Hora</p>
-                    <input type="time" name="hora"/>
+                <label>Hora</label>
+                <input type="time" name="hora" class="u-full-width" value=""/>
 
-                    <p>Sintomas</p>
-                    <input type="textarea" name="sintomas" />
-                    
-                    <p></p>
-                    <input className="BotonForm" type="submit" value="Agregar Cita" />
+                <label>Sintomas</label>
+                <textarea name="sintomas" class="u-full-width"></textarea>
+            
+                <button type="submit" class="u-full-width button-primary">Agregar Cita</button>
+
                 </form>
             </div>
         </>
